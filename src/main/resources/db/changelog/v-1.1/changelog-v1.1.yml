@@ -1,0 +1,27 @@
+databaseChangeLog:
+  - changeSet:
+      id: database-initialization
+      validCheckSum: any
+      author: Trofan
+      changes:
+        - sqlFile:
+            path: schema/2022_01_09_15_00_database_initialization.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: init-roles
+      validCheckSum: any
+      author: Trofan
+      changes:
+        - sqlFile:
+            path: schema/2022_01_09_15_05_00_roles.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: flights
+      validCheckSum: any
+      author: Trofan
+      changes:
+        - sqlFile:
+            path: schema/2022_01_09_15_10_insert_flights.sql
+            relativeToChangelogFile: true

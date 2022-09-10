@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: v-1.1/changelog-v1.1.yml
+      validCheckSum: any
+      relativeToChangelogFile: true
+
+
